@@ -1,0 +1,327 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*****  HEADER   *****/
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+ 
+}
+
+.logo {
+    padding: 30px 0 30px 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+}
+
+.logo img {
+    height: 50px;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-bar .nav-link {
+    padding: 5px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#nav-bar .nav-link:hover {
+    cursor: pointer;
+}
+
+
+/*****  FIN DEL HEADER   ****/
+
+
+/**** INICNIO HERO   *******/
+
+#hero {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 180px;
+}
+
+#hero h2 {
+    font-size: 35px;
+}
+
+#hero form input {
+    display: block;
+    margin: 25px auto;
+    max-width: 90%;
+}
+
+#hero form #email {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 450px;
+    padding: 5px;
+}
+
+#hero form #submit {
+    border: 2px solid black;
+    width: 300px;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    background-color: rgb(252, 197, 48);
+    text-transform: uppercase;
+}
+
+
+/**** FIN DE HERO *****/
+
+
+/****  INICIO DE CARACTERISTICAS *****/
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.flex {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex .icon {
+    width: 100px;
+    height: 100px;
+    flex-grow: 0;
+}
+
+.flex .icon .icono {
+    font-size: 80px;
+    color: rgb(252, 197, 48);
+}
+
+.flex .icon img {
+    width: 100px;
+}
+
+.flex h2 {
+    font-size: 35px;
+}
+
+.flex p {
+    font-size: 25px;
+}
+
+.flex .descripcion {
+    flex-grow: 1;
+    text-align: justify;
+    padding: 0 0 0 50px;
+}
+
+
+/*****  FIN DE CARATERISTICAS **** */
+
+
+/**** INICIO DE VIDEO  *****/
+
+.video-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-contenedor #video {
+    margin: 20px;
+    width: 900px;
+    max-width: 90%;
+    height: auto;
+}
+
+
+/**** FIN DE VIDEO ******/
+
+
+/****  INICIO PRECIO ******/
+
+.precio {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.precio .producto {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.precio .producto h3 {
+    background-color: rgb(179, 177, 177);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.precio .producto p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.precio .producto ul {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.precio .producto ul li {
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+#btn-1 {
+    width: 100%;
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precio .producto .btn {
+    text-transform: uppercase;
+    font-size: 23px;
+    background-color: rgb(252, 197, 48);
+    padding: 13px 18px;
+    border: none;
+}
+
+
+/**** FIN PRECIO ****/
+
+
+/****** FOOTER  ************/
+
+#footer {
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(179, 177, 177);
+}
+
+#footer #nav-secundario {
+    padding: 20px 0 20px 0;
+}
+
+#footer #nav-secundario ul {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer #nav-secundario ul li {
+    padding-right: 60px;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+#footer #nav-secundario ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer #nav-secundario ul li {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    #header {
+        flex-direction: column;
+    }
+    .logo {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #nav-bar ul {
+        justify-content: center;
+    }
+    .precio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .precio .producto {
+        margin-top: 50px;
+        width: 600px;
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+    .logo img {
+        padding: 10px;
+    }
+    #nav-bar ul {
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .flex {
+        margin-top: 100px;
+    }
+    .flex .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .flex {
+        margin: 50px 0;
+        width: auto;
+        max-width: 90%;
+    }
+    #footer #nav-secundario ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
